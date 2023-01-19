@@ -41,17 +41,18 @@ public class RestaurantBillGenerator {
         start();
     }
 
-    public static void start(){
-        DishService dishService=new DishService();
+    public static void start() {
+        DishService dishService = new DishService();
         dishService.fillDishList();
-        OrderService orderService=new OrderService();
-        getSelectionMenu(dishService,orderService);
+        OrderService orderService = new OrderService();
+        getSelectionMenu(dishService, orderService);
 
     }
-    public static void getSelectionMenu(DishService dishService,OrderService orderService){
-        int select=-1;
-        while (select!=0){
-            Scanner inp=new Scanner(System.in);
+
+    public static void getSelectionMenu(DishService dishService, OrderService orderService) {
+        int select = -1;
+        while (select != 0) {
+            Scanner inp = new Scanner(System.in);
             System.out.println("----------------------------------------------------");
             System.out.println("*** Lezzet Restaurant/Cafe Sipariş Uygulaması ***");
             System.out.println("1-Menü");
@@ -60,9 +61,9 @@ public class RestaurantBillGenerator {
             System.out.println("4-Hesap oluştur");
             System.out.println("0-ÇIKIŞ");
             System.out.println("Seçiminiz: ");
-            select= inp.nextInt();
+            select = inp.nextInt();
             System.out.println("----------------------------------------------------");
-            switch (select){
+            switch (select) {
                 case 1:
                     dishService.showDishMenu();
                     break;
