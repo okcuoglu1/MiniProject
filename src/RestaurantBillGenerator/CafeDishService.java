@@ -1,8 +1,6 @@
 package RestaurantBillGenerator;
 
-public class CafeDishService extends DishService {
-
-
+public class CafeDishService extends DishService{
 
     @Override
     public void fillDishList() {
@@ -19,15 +17,4 @@ public class CafeDishService extends DishService {
         super.dishList.add(dish5);
         super.dishList.add(dish6);
     }
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -43,10 +43,7 @@ public class RestaurantBillGenerator {
 
     public static void start() {
 
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Merhaba");
-        System.out.println("1-Restaurant");
-        System.out.println("2-Cafeterya");
+
 
 
         DishService dishService = new DishService();
