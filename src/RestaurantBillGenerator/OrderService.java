@@ -15,6 +15,8 @@ public class OrderService {
         while (dishCode!=0){
             System.out.println("Lütfen ürün kodu giriniz: (ÇIKIŞ:0)");//100//500
             dishCode=inp.nextInt();
+            if(dishService.findDishByCode(dishCode) != null){
+
             Dish dish=dishService.findDishByCode(dishCode);//100,Adana kebabı,220//bulamazsa 0,"",0
             if(dish.getCode()>0){
                 System.out.println("Adet giriniz:");
@@ -28,7 +30,7 @@ public class OrderService {
                 System.out.printf("Sipariş kodu:%-5s lezzet kodu:%-3s adı:%-20s adet:%-3s\n",
                         order.orderCode,order.dish.getCode(),order.dish.getName(),order.numOfDish);
             }
-
+            }
         }
 
     }

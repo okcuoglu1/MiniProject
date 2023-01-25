@@ -8,6 +8,7 @@ public class DishService {
     List<Dish> dishList =new ArrayList<>();
 
     public void fillDishList(){
+
         Dish dish1=new Dish(100,"Adana Kebabı",220.0);
         Dish dish2=new Dish(101,"Urfa Kebabı",200.0);
         Dish dish3=new Dish(102,"Çökertme Kebabı",200.0);
