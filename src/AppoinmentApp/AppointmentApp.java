@@ -32,7 +32,7 @@ Proje: Randevu oluşturma uygulaması geliştiriniz.
 
 import java.util.Scanner;
 
-public class AppoinmentApp {
+public class AppointmentApp {
 
     public static void main(String[] args) {
         start();
